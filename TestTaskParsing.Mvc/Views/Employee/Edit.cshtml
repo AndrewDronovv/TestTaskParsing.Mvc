@@ -1,0 +1,139 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Edit Employee";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <input asp-for="Id" hidden />
+    <div class="border p-3">
+        <div class="row mb-3">
+            <div class="col-8">
+                <div class="form-group row mb-3 align-items-center">
+                    <div class="col-4">
+                        <label asp-for="PayrollNumber"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PayrollNumber" class="form-control" />
+                        <span asp-validation-for="PayrollNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="ForeName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ForeName" class="form-control" />
+                        <span asp-validation-for="ForeName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Surname"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Surname" class="form-control" />
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="DateOfBirth"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="DateOfBirth" class="form-control" />
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Telephone"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Telephone" class="form-control" />
+                        <span asp-validation-for="Telephone" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Mobile"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Mobile" class="form-control" />
+                        <span asp-validation-for="Mobile" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Address"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Address" class="form-control" />
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="City"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="PostCode"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PostCode" class="form-control" />
+                        <span asp-validation-for="PostCode" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="EMailHome"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="EMailHome" class="form-control" />
+                        <span asp-validation-for="EMailHome" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="StartDate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="StartDate" class="form-control" />
+                        <span asp-validation-for="StartDate" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-8 offset-4 row">
+                        <div class="col mb-3">
+                            <button type="submit" class="btn btn-primary w-100" value="Update" />
+                            <i class="fa-solid fa-pen-to-square me-2"></i>Update
+                            </button>
+                        </div>
+                        <div class="col mb-3">
+                            <a asp-action="Index" class="btn btn-success w-100"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                @* Keep this empty *@
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

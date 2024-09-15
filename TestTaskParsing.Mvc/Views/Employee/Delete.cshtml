@@ -1,0 +1,116 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post" asp-action="DeletePost">
+    <input asp-for="Id" hidden />
+    <div class="border p-3">
+        <div class="row mb-3">
+            <div class="col-8">
+                <div class="form-group row mb-3 align-items-center">
+                    <div class="col-4">
+                        <label asp-for="PayrollNumber"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PayrollNumber" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="ForeName"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="ForeName" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Surname"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Surname" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="DateOfBirth"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="DateOfBirth" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Telephone"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Telephone" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Mobile"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Mobile" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="Address"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Address" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="City"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="City" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="PostCode"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="PostCode" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="EMailHome"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="EMailHome" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-4">
+                        <label asp-for="StartDate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="StartDate" disabled class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group row mb-3">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col mb-3">
+                            <input type="submit" class="btn btn-danger w-100" value="Delete" />
+                        </div>
+                        <div class="col mb-3">
+                            <a asp-action="Index" class="btn btn-success w-100"><i class="fa-solid fa-arrow-right-from-bracket"></i>Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
